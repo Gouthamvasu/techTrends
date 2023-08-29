@@ -1,0 +1,43 @@
+## Docker commands used to build the application 
+docker build -t techtrends -f ./Dockerfile .
+
+## Docker commands used to run the application
+docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+docker logs 9e0c3dfe6dd4
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 18:59:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 18:59:14] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 18:59:14] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:app:08/29/2023, 19:00:38 | Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:00:38] "GET /1 HTTP/1.1" 200 -
+INFO:app:08/29/2023, 19:01:49 | About page rendered!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:49] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:52] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:55] "GET / HTTP/1.1" 200 -
+INFO:app:08/29/2023, 19:01:57 | Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:57] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:02] "GET / HTTP/1.1" 200 -
+INFO:app:08/29/2023, 19:02:04 | Article "Kubernetes v1.20 Release Notes" retrieved!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:04] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:05] "GET / HTTP/1.1" 200 -
+INFO:app:08/29/2023, 19:02:08 | Article "CNCF Cloud Native Interactive Landscape" retrieved!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:08] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:09] "GET / HTTP/1.1" 200 -
+INFO:app:08/29/2023, 19:02:12 | Article "CNCF Cloud Native Definition v1.0" retrieved!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:12] "GET /5 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:14] "GET / HTTP/1.1" 200 -
+INFO:app:08/29/2023, 19:02:17 | Article "CNCF Cloud Native Definition v1.0" retrieved!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:17] "GET /5 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:18] "GET / HTTP/1.1" 200 -
+INFO:app:08/29/2023, 19:02:20 | Article "Kubernetes Certification" retrieved!
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:20] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:22] "GET / HTTP/1.1" 200 -
