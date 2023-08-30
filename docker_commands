@@ -13,31 +13,43 @@ docker logs 9e0c3dfe6dd4
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
-INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 18:59:14] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 18:59:14] "GET /static/css/main.css HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 18:59:14] "GET /favicon.ico HTTP/1.1" 404 -
-INFO:app:08/29/2023, 19:00:38 | Article "2020 CNCF Annual Report" retrieved!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:00:38] "GET /1 HTTP/1.1" 200 -
-INFO:app:08/29/2023, 19:01:49 | About page rendered!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:49] "GET /about HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:52] "GET /create HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:55] "GET / HTTP/1.1" 200 -
-INFO:app:08/29/2023, 19:01:57 | Article "KubeCon + CloudNativeCon 2021" retrieved!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:01:57] "GET /2 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:02] "GET / HTTP/1.1" 200 -
-INFO:app:08/29/2023, 19:02:04 | Article "Kubernetes v1.20 Release Notes" retrieved!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:04] "GET /3 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:05] "GET / HTTP/1.1" 200 -
-INFO:app:08/29/2023, 19:02:08 | Article "CNCF Cloud Native Interactive Landscape" retrieved!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:08] "GET /4 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:09] "GET / HTTP/1.1" 200 -
-INFO:app:08/29/2023, 19:02:12 | Article "CNCF Cloud Native Definition v1.0" retrieved!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:12] "GET /5 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:14] "GET / HTTP/1.1" 200 -
-INFO:app:08/29/2023, 19:02:17 | Article "CNCF Cloud Native Definition v1.0" retrieved!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:17] "GET /5 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:18] "GET / HTTP/1.1" 200 -
-INFO:app:08/29/2023, 19:02:20 | Article "Kubernetes Certification" retrieved!
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:20] "GET /6 HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [29/Aug/2023 19:02:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:←[33mPress CTRL+C to quit←[0m
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:08:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:08:54] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+DEBUG:app:08/30/2023, 13:08:56 | Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:08:56] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:08:56] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:04] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+DEBUG:app:08/30/2023, 13:09:06 | Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:06] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:06] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:07] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+DEBUG:app:08/30/2023, 13:09:09 | Article "Kubernetes v1.20 Release Notes" retrieved!
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:09] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:09] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:10] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+DEBUG:app:08/30/2023, 13:09:12 | Article "CNCF Cloud Native Interactive Landscape" retrieved!
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:12] "GET /4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:12] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:13] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+DEBUG:app:08/30/2023, 13:09:15 | Article "CNCF Cloud Native Definition v1.0" retrieved!
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:15] "GET /5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:15] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:17] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+DEBUG:app:08/30/2023, 13:09:19 | Article "Kubernetes Certification" retrieved!
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:19] "GET /6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:19] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:20] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+DEBUG:app:08/30/2023, 13:09:22 | About page rendered!
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:22] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:22] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:25] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:26] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Aug/2023 13:09:26] "←[36mGET /static/css/main.css HTTP/1.1←[0m" 304 -

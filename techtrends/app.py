@@ -110,8 +110,8 @@ def metrics():
 
 #Function that logs messages
 def log_message(msg):
-    app.logger.info('{time} | {message}'.format(
-        time=datetime.now().strftime("%m/%d/%Y, %H:%M:%S"), message=msg))
+    app.logger.debug('{time} | {message}'.format(
+    time=datetime.now().strftime("%m/%d/%Y, %H:%M:%S"), message=msg))
 
 
 # start the application on port 3111
